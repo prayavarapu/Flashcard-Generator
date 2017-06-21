@@ -1,0 +1,35 @@
+
+//questions in objects
+{
+"question": [
+
+{ 	
+	"name": "Card 1",
+	"front": "Are dolphins fish or mammals?",
+	"back": "mammals"
+
+},
+
+{ 	
+	"name": "Card 2",
+	"front": "Which body part stays the same size from when we are born up until we die?",
+	"back": "eyeballs"
+
+},
+
+{ 	
+	"name": "Card 3",
+	"front": "What is the strongest muscle in the human body?",
+	"back": "tongue"
+
+},
+
+{ 	
+	"name": "Card 4",
+	"front": "What is the only food that doesn't spoil?",
+	"back": "honey"
+},
+
+]
+
+}
