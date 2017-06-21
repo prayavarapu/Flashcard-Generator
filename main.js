@@ -6,6 +6,8 @@
 
 	var fs = require("fs");
 
+	var questions = require ("./questions.json");
+
 //Prompting the user to either view the cards or not view the cards
 	inquirer.prompt([{
 		name: "command",
@@ -48,16 +50,15 @@
 
 	var showQuestion = function(array, index){
 		question = array[index];
-		var parsedQuestion = JSON.stringify(question);
-		var questionText = parsedQuestion.front;
-		var correctResponse = parsedQuestion.back;
+		var questionString = JSON.stringify(question);
+		var questionText = questionString.front;
+		var correctResponse = questionString.back;
 	}
 
 	inquirer.prompt([{
 		name: "response",
 		message: questionText
-	}])
-	.then(function(answer){
+	}]).then(function(answer){
 		if (answer.response === correctResponse) {
 			console.log("Correct!");
 			if (index < array.length - 1){
